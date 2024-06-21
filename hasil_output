@@ -1,0 +1,7 @@
+fetch('https://drive.google.com/file/d/1YWNy6PbChLh5ebi5khkcRdItHrqgpHBd/view?usp=sharing')
+    .then(response => response.text())
+    .then(data => {
+        // Lakukan pemrosesan data di sini
+        console.log(data); // Contoh: tampilkan data di console
+    })
+    .catch(error => console.error('Error fetching CSV:', error));
